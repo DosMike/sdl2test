@@ -1,0 +1,10 @@
+# Build & tool artifacts
+build/
+venv/
+# accelerate subsequent builds
+.conan2_docker/
+# contains local system properties
+conanprofile.txt
+
+# VS Code
+.vscode/

@@ -1,0 +1,9 @@
+[requires]
+# place your dependencies here. you can find packages at https://conan.io/center
+sdl/2.30.9
+#sdl_ttf/2.22.0
+#sdl_image/2.6.3
+
+[generators]
+CMakeDeps
+CMakeToolchain

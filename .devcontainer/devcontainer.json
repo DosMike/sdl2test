@@ -1,0 +1,11 @@
+{
+	"name": "Existing Docker Compose (Extend)",
+	"dockerComposeFile": [
+		"docker-compose.yml"
+	],
+	"service": "gcc",
+	"workspaceFolder": "/usr/mybcp",
+	"remoteUser": "mybcp",
+	"containerUser": "mybcp",
+	"postAttachCommand": "./entrypoint.sh"
+}
