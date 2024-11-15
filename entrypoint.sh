@@ -1,4 +1,6 @@
 #!/bin/bash
+set -eo pipefail
+cd "$(dirname "$(realpath -e "${BASH_SOURCE[0]}")")"
 
 # wrapper to fix permissions of mounted volumes
 

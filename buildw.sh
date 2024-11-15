@@ -1,5 +1,8 @@
 #!/bin/bash
 
+set -eo pipefail
+cd "$(dirname "$(realpath -e "${BASH_SOURCE[0]}")")"
+
 # i can't remember that command line, so here goes another wrapper
 
 if [[ -n "$DOCKER" ]]; then
@@ -7,4 +10,4 @@ if [[ -n "$DOCKER" ]]; then
   exit 1
 fi
 
-env UID=$(id -u) GID=$(id -g) docker compose up
+env UID="$(id -u)" GID="$(id -g)" docker compose up
